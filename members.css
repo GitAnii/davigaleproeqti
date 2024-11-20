@@ -102,6 +102,7 @@ header {
     cursor: pointer;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
+
 header .div-2 {
     text-align: left;
     padding: 200px 80px;
@@ -243,6 +244,9 @@ text-decoration-skip-ink: none;
     justify-content: center;
     gap: 30px;
 }
+.img-container img:hover {
+    transform: scale(1.1); /* Enlarges the image by 20% */
+}
 @media (max-width :728px) {
     .section-1 .img-container{
         flex-wrap: wrap;
@@ -292,7 +296,9 @@ text-decoration-skip-ink: none;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 350px;
+    cursor: pointer;
 }
+
 
 .card-header img {
     width: 100%;
@@ -423,17 +429,11 @@ text-decoration-skip-ink: none;
     padding: 100px 20px; /* Adjust padding for smaller screens */
 }
 
-.imgs-div .s-img{
-    display: inline;
-}
-.section-2 .main-div .t-div {
-    text-align: center;
-    margin-bottom: 50px; /* Add spacing below title and paragraph */
-}
+
 
 .t-div h1 {
     color: white;
-    font-size: 36px; /* Reduced size for responsiveness */
+    font-size: 36px; 
     font-weight: 500;
     line-height: 1.3;
     text-align: center;
@@ -449,27 +449,42 @@ text-decoration-skip-ink: none;
 
 .imgs-div {
     display: flex;
-    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
-    justify-content: center; /* Center content */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     gap: 20px;
 }
 .s-img{
-    display: inline;
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .imgs-div img {
-    width: 100%; /* Make images responsive */
-    max-width: 400px; /* Set a max width */
-    border-radius: 20px; /* Slightly reduce border radius for smaller screens */
-   display: inline;
+    
+  display: block;
+    max-width: 400px;
+    border-radius: 20px; 
 }
 
 .imgs-div .img2 {
     display: inline;
     height: auto;
     width: auto;
-    max-width: 200px; /* Constrain smaller images */
+    max-width: 200px; 
 }
+
+
+
+
+.main-div {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.t-div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 
 @media (max-width: 1024px) {
     .section-2 {

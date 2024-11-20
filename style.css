@@ -227,6 +227,7 @@ text-align: center;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 350px;
+    cursor: pointer;
 
   }
   .card-header img {
